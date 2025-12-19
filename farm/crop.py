@@ -2,4 +2,8 @@
 
 
 class Crop:
-    pass  # YOUR CODE HERE
+    def __init__(self):    # YOUR CODE HERE
+        self.grains = 0
+
+    def ripe(self):
+        return self.grains >= 15
