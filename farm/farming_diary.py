@@ -5,6 +5,7 @@ and checked for ripeness.
 """
 
 from farm.corn import Corn
+from farm.rice import Rice
 
 
 print("\n\n📝 Day One: Corn")
@@ -27,16 +28,19 @@ else:
 print("\n\n📝 Day Two: Rice")
 
 # 1. Instantiate a rice crop
-pass  # YOUR CODE HERE
+rice = Rice()  # YOUR CODE HERE
 
 # 2. Water the rice crop
-pass  # YOUR CODE HERE
+rice.water()  # YOUR CODE HERE
 
 # 3. Transplant the rice crop
-pass  # YOUR CODE HERE
+rice.transplant()  # YOUR CODE HERE
 
 # 4. Print "The rice crop produced ## grains"
-pass  # YOUR CODE HERE
+print(f"The rice crop produced {rice.grains} grains")  # YOUR CODE HERE
 
 # 5. Print "The rice crop is ripe" or "The rice crop is not ripe"
-pass  # YOUR CODE HERE
+if rice.ripe():
+    print("The rice crop is ripe")
+else:
+    print("The rice crop is not ripe")
